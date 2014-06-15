@@ -1,0 +1,267 @@
+
+<html>
+    <head>
+        <title>Wector Electrical - Melbourne Electrician</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/blitzer/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" type="text/css" />
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600|Bree+Serif" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+           <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+
+function initialize() {
+  var mapOptions = {
+    zoom: 9,
+    center: new google.maps.LatLng(-37.812604, 144.963531),
+    mapTypeId: google.maps.MapTypeId.TERRAIN
+  };
+
+  var bermudaTriangle;
+
+  var map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+
+  // Define the LatLng coordinates for the polygon's path.
+  var triangleCoords = [
+    new google.maps.LatLng(-37.975934, 144.672565),
+    new google.maps.LatLng(-37.880610, 144.619007),
+    new google.maps.LatLng(-37.655895, 144.930744),
+    new google.maps.LatLng(-37.833986, 145.296040),
+    new google.maps.LatLng(-38.078701, 145.125751)
+  ];
+
+  // Construct the polygon.
+  bermudaTriangle = new google.maps.Polygon({
+    paths: triangleCoords,
+    strokeColor: '#FF0000',
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: '#32AF57',
+    fillOpacity: 0.35
+  });
+
+  bermudaTriangle.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+    </head>
+    <body>
+        <div id="foreground">
+            <header class="row">
+                <h1>
+                    <i class="lg fa fa-gears fa-lg top-text"></i>
+                    Wector Electrical
+                </h1>
+                <h2 class="top-text">
+                    Melbourne Electrician
+                </h2>
+            </header>
+
+            <div class="row r2">
+                <div id="stand" class="w50">
+                </div>
+                <div class="w50 nm top-text">
+                    <h1 class="big-ttl">
+                        Best Electricians in Melbourne
+                    </h1>
+                    <h2 class="big-sub">
+                        For all your quality electrical work for your home or business throughout Melbourne, call and speak with the friendly experts at Wector Electrical today.
+                    </h2>
+                    <p>
+                        Wector Electrical offers the complete range of services for your household or commercial/business premises. We specialize in residential and commercial electrical services, new homes and renovation work, school and college work, local government installations, property management and general maintenance. I also assist you in creating your own vision.
+                    </p>
+                    <p>
+                    	When you use our service we make sure your home or business is electrically safe for many years to come. 
+					</p>
+
+                    <a href="#" class="buy" title="Order Now">
+                        <span class="b-price">
+                            Enquire now: 
+                        </span>
+                        <span class="b-txt">
+                            0405 418 132
+                        </span>
+                    </a>
+
+                    <p class="note">
+                        Satisfaction guaranteed
+                    </p>
+                </div>
+                <div class="cb"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <h2 class="title center">
+                <span>
+                    Services by Wector Electrical
+                </span>
+            </h2>
+            <ul id="features">
+                <li class="w50">
+                    <i class="fa fa-check fa-4x"></i>
+                    <h4>
+                        Downlights & LED Lighting
+                    </h4>
+                    From expert home lighting design, installation and maintenance, Wector Electrical has all your specialty lighting needs covered. Properly installed energy efficient lighting will reduce your electricity costs and will turn your house into a warm, inviting and luxurious home.
+                </li>
+                <li class="w50 nm">
+                    <i class="fa fa-check-square-o fa-4x"></i>
+                    <h4>
+                        Wiring Upgrade/New Home Installations
+                    </h4>
+                    Wector Electrical can help you with all your electrical wiring needs and upgrades.  We provide you and your family with quality work, professional service, prompt solutions and the utmost in safety and security.  Your home is wired to suit you and your family’s needs while keeping you safe from electrical wiring hazards.  
+                </li>
+                <li class="w50">
+                    <i class="fa fa-check fa-4x"></i>
+                    <h4>
+                        Switchboard installation, repair and upgrade
+                    </h4>
+                    Is your house keeping up with the times? With the average life span of a home now greater than 35 years and technology's rapid rate of progression, the answer is likely no. Today's gadgets and appliances easily overload electrical systems in many of today's older homes, causing issues that could easily be prevented with an upgraded electrical panel (switchboard). 
+                </li>
+                <li class="w50 nm">
+                    <i class="fa fa-check-square-o fa-4x"></i>
+                    <h4>
+                        General Lighting / Wireless Lighting Controls
+                    </h4>
+                    Wector Electrical is the business of choice for custom lighting design and quality installation. Call us about designing and installing custom lighting in your home or business today. Let us help you create an ambiance that cannot only be seen, but felt.
+                </li>
+                <li class="w50">
+                    <i class="fa fa-check fa-4x"></i>
+                    <h4>
+                        Alarm Systems/CCTV systems/ Security Lights/Exit and emergency lights
+                    </h4>
+                    Protect your home or business by installing motion detectors, floodlights, occupancy sensors, CCTV cameras. Effective lighting is an important part of any security plan.  Wector Electrical can design a lighting solution that is energy efficient and effective in meeting your needs.
+                </li>
+                <li class="w50 nm">
+                    <i class="fa fa-check-square-o fa-4x"></i>
+                    <h4>
+                        Data, Telephone and TV Wiring/ Home Theater Installation
+                    </h4>
+                    We can assist with data, TV and telephone wiring. Whether it’s installing new Ethernet sockets, extending your telephone system, installing new telephone sockets or new TV points, Wector Electrical  is the business of choice.<br>
+                    Enjoy the amazing sound of your Home Theatre by calling us for prompt installation!
+                </li>
+                <li class="w50">
+                    <i class="fa fa-check fa-4x"></i>
+                    <h4>
+                        Smoke Alarms
+                    </h4>
+                    	Rest assured knowing that a qualified electrician has installed and checked your smoke detector.
+                </li>
+                <li class="w50 nm">
+                    <i class="fa fa-check-square-o fa-4x"></i>
+                    <h4>
+                        Surge Protection/Safety Switches
+                    </h4>
+                    	Wector Electrical offer your whole house surge protection solutions to help you protect against surge risks to your valuable appliances, equipment and data.
+                </li>
+            </ul>
+        </div>
+
+        <div id="tst-w" class="bg-alt">
+            <ul id="testimonials" class="row">
+                <li class="w30">
+                    <q>
+                        .Ovi Ciulinaru and his company Wector Electrical had such an excellent experience when we picked them to rewire the whole house. Everything  went smoothly ,quickly and according to the plan provided. We were  fortunate enough to have Wector Electrical as the Electrical contractor performing work on this site. Wector knowledge of his services and ability to match these to our needs certainly made a big difference, compared to other electricians we have encountered   The service is fantastic and we recommend them to anyone  looking for any electrical work.
+                    </q>
+                    <p class="who">
+                        Cameron Morris,<br>
+						General Manager - The Curtain Exchange<br>
+						Hawthorn- Victoria
+                    </p>
+                </li>
+                <li class="w30">
+                    <q>
+                        We have worked with Ovidiu Ciulinaru and his business for over 5 years now and found Ovi and his team to be very professional in their work. Safety is a priority within our organization and Ovi has always worked safely and followed the necessary procedures and protocols when working under permit.Wector`s Electrical services have provided an excellent quality of work,which included design and installation of new lighting system and routine maintenance activities.<br>
+						We will continue to work with Ovi in future projects as our first preference for an electrical contractor.
+                    </q>
+                    <p class="who">
+						Richard Kleine,<br>
+						General Manager - Healthy Smiles Dental Group<br>
+						Camberwell - Victoria
+                    </p>
+                </li>
+                <li class="w30 nm">
+                    <q>
+                        We have been using Ovi Ciulinaru and his company for approx 6 years. He did all the electrical and sensors in our offices,he has put in numerous power points and lighting throughout our offices .Ovi has always been very professional in his dealings ,providing a written quote for our consideration before any work is performed.He explains different products in terms of efficiency and cost  effectiveness and reliably arrives at the agreed time.Ovi is very courteous and trustworthy.We will continue to use Wector Electrical for all our electrical work and we recommend Ovi to anyone considering electrical work.
+                    </q>
+                    <p class="who">
+						Robyn Asbury<br>
+						Media & Pr Manager<br>
+						Australian Nursing and Midwifery Federation<br>
+						Victorian Brench
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bg-w">
+            <div class="row">
+                <div class="w50">
+                    <div id="map-canvas"></div>
+                </div>
+                <div class="w50 nm">
+                    <h2 class="title">
+                        Fast access areas
+                    </h2>
+                    <p class="h-sub">
+                       Wector Electrical has the necessary knowledge, experience, management skills and staff to handle the requirements of standard installation jobs through to the most demanding electrical works required in the modern electrical tender process.
+                    </p>
+                    <p>
+                    	Point Cook, Werribee, Altona, Melbourne CBD.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-w">
+            <div class="row">
+                <div class="w50">
+                    <h2 class="title">
+                       About Wector Electrical
+                    </h2>
+					 <p>
+                       What makes Wector Electrical the best:
+                    </p>
+                    <p>
+                    	<ul>
+                    		<li>Punctuality and meeting a deadline</li>
+                    		<li>Excellent experience</li>
+                    		<li>High quality of service and competitive prices</li>
+                    		<li>Professional and well trained Electrician</li>
+                    	</ul>
+                    </p>
+
+                    <a href="#" class="buy" title="Order Now">
+                        <span class="b-price">
+                            Call now:
+                        </span>
+                        <span class="b-txt">
+                            0405 418 132
+                        </span>
+                    </a>
+
+                    <p class="note c1">
+                        Satisfaction guaranteed
+                    </p>
+                </div>
+
+                <div class="w50 nm cnt">
+                    <img src="images/wector_electrical_photo_3.jpg" alt="Wector Electrical Photo" title="Wector Electrical" style="width:373px"/>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="row">
+            <div class="tx">
+                Copyright &copy; 2008-2014 Wector PTY. LTD. Registered Electrical Contactor REC 18427
+            </div>
+        </footer>
+    </body>
+</html>
