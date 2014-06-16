@@ -52,7 +52,7 @@ ul{
     /******************************************************************/
     background: url('../images/electrician.jpg') no-repeat;
     background-size: 100%;
-    background-position: center;
+    background-position: 0px 0px;
     /* background: -webkit-linear-gradient(top, #CF336C, #AB1041);
     background: linear-gradient(to bottom, #CF336C, #AB1041);
    /******************************************************************/
